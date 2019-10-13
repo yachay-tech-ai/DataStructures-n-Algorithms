@@ -1,9 +1,11 @@
 # Data_structures
 
 1) Introduction
+
 In computer science, a data structure is a data organization, management, and storage format that enables efficient access and modification.
 
-2)Types
+2) Types
+
 Data structures are of various types. The most commonly used are:
 
 - Liked lists
