@@ -1,16 +1,26 @@
-# Data_structures
+# Data Structures
 
-1) Introduction
 
 In computer science, a data structure is a data organization, management, and storage format that enables efficient access and modification.
 
-2) Types
+Inside each ds folder, there is explanation provided about the implementation.
+
+**Types**
 
 Data structures are of various types. The most commonly used are:
 
+- Arrays
 - Linked lists
+- Stacks
+- Queues
+- Graphs
+- Binary trees
+- Binary Search Trees
+- Heaps
+- Hash maps (Dictionaries)
 
-Linked lists are linear data structures, meaning its elements are attached adjacently, linked by pointers. Each element in the list is stored at a non-contiguous location in memory.
+In addition there are some less common data structures that could also be useful for certain problems:
 
-![alt text](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
+- Tries
+- K-dimensional Trees
 
