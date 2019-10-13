@@ -63,3 +63,12 @@ There are 6 steps:
 5)Reach to the last node in the list
 6) Change the next of the last node to point to the new node.
 
+## Deleting Nodes
+
+There are 4 steps to delete a node from a linked list:
+![alt text](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/05/Linkedlist_deletion.png)
+
+1) Find previous node of the node to be deleted
+2) Create a temporal pointer to point at the element to be deleted.
+2) Change the next of the previous node to point to next element pointed by the node to be deleted
+3) Free memory for the node to be deleted, i.e. free the memory pointed by the temporal pointer.
