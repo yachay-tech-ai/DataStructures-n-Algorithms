@@ -8,7 +8,7 @@ In computer science, a data structure is a data organization, management, and st
 
 Data structures are of various types. The most commonly used are:
 
-2.1) Liked lists
+- Linked lists
 
 Linked lists are linear data structures, meaning its elements are attached adjacently, linked by pointers. Each element in the list is stored at a non-contiguous location in memory.
 
