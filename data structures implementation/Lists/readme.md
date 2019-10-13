@@ -30,7 +30,7 @@ public:
 ```
 ## Inserting nodes
 
-###### At the front of the list
+**At the front of the list**
 ![alt text](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_at_start.png)
 
 There are 4 steps:
@@ -40,7 +40,7 @@ There are 4 steps:
 1) Make the new node's next pointer, point to the head of the list.
 2) Make new node the head of the list.
 
-###### After a given node
+**After a given node**
 ![alt text](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_middle.png)
 
 There are 5 steps:
@@ -51,7 +51,7 @@ There are 5 steps:
 3) Make next for new node as next of previous node
 4) Move the next of previous node as new node
 
-###### At the end
+**At the end**
 ![alt text](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_last.png)
 
 There are 6 steps:
