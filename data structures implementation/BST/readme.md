@@ -20,4 +20,4 @@ To search for a given key, we first compare it with the root. If the key is at r
 
 To insert a node with a given key, we first traverse the tree starting from the root, down to a leaf node, using the same search principle explained before. When we hit a leaf node, we insert the new node as its child.
 
-![alt_text](https://i0.wp.com/algorithms.tutorialhorizon.com/files/2014/09/BST-Insert.png)
+![alt_text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx-v32ITUNXAiJWY9wKK49ZOCG1eUw9gFvTZ0fbOjk2jSGVJjOGw)
