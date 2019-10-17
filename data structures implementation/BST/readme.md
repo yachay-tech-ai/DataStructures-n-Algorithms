@@ -31,10 +31,13 @@ There exists three possibilities when deleting a node from a search tree. For th
 
 2) **Node to be deleted has only one child**. We have to copy the child node into its parent, and then delete child.
 ![alt_text](https://www.ideserve.co.in/learn/img/bstDelete_1.gif)
+
 2) **Node to be deleted has two children** Find inorder successor of the node. Copy contents of the inorder successor to the node and delete the inorder successor. Note that inorder predecessor can also be used.
 ![alt_text](https://www.ideserve.co.in/learn/img/bstDelete_2.gif)
 
 ## BST Traversals
+
+We first explain briefly each kind of tree traversal. Then we provide an example using the very first BST picture at the top of this document (the green one).
 
 1) **Inorder Traversal**. In case of binary search trees (BST), Inorder traversal gives nodes in non-decreasing order. The algorithm is the following (notice the recursive nature):
 
@@ -42,11 +45,15 @@ There exists three possibilities when deleting a node from a search tree. For th
   - Visit the root of current tree.
   - Traverse the right subtree, i.e., call Inorder(right-subtree)
   
+ Inorder(Tr) = {1,3,4,6,7,8,10, 13, 14}
+  
 2) **Preorder Traversal** Preorder traversal is used to create a copy of the tree. Preorder traversal is also used to get prefix expression on of an expression tree. The algorithm is the following:
 
   - Visit the root.
   - Traverse the left subtree, i.e., call Preorder(left-subtree).
   - Traverse the right subtree, i.e., call Preorder(right-subtree).
+  
+  Preorder(Tr) = {8,3,1,6,4,7,10,14,13}
   
 3) **Postorder Traversal** Postorder traversal is used to delete the tree. Postorder traversal is also useful to get the postfix expression of an expression tree. The algorithm is the following:
   
@@ -54,6 +61,4 @@ There exists three possibilities when deleting a node from a search tree. For th
   - Traverse the right subtree, i.e., call Postorder(right-subtree).
   - Visit the root.
 
-
-https://www.ideserve.co.in/learn/binary-search-tree-delete
-https://www.mathwarehouse.com/programming/gifs/binary-search-tree.php
+  Postorder(Tr) = {1,4,7,6,3,13,14,10,8
