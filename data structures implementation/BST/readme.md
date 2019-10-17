@@ -24,7 +24,7 @@ To insert a node with a given key, we first traverse the tree starting from the 
 
 ## Deleting a node
 
-There exists three possibilities when deleting a node from a search tree.
+There exists three possibilities when deleting a node from a search tree. For the third case, refer to BST traversal to understand inorder traversal.
 
 1) *Node to be deleted is a leaf*. This is the easiest as we just have to delete the node.
 ![alt_text](https://www.ideserve.co.in/learn/img/bstDelete_0.gif)
