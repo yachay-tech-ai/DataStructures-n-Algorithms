@@ -3,7 +3,7 @@ Series of implementations of various data structures and algorithms.
 
 The repository consists of:
 - Data structures implementations
-- Searching algorithms and dynamic programming **(comming soon)**
+- Searching algorithms and dynamic programming **(coming soon)**
 - Src files corresponding to various problems.
 
 Inside the implementation folder, there is some theory about data structures located in the README
