@@ -1,5 +1,5 @@
 # DataStructures-n-Algorithms
-Series of implementations of various data structures and algorithms.
+Series of implementations of various data structures and algorithms. **(work in progress)**
 
 The repository consists of:
 - Data structures implementations
