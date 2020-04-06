@@ -69,4 +69,62 @@ void Graph::printPath(int *s_parent, int *t_parent, int s, int t, int intersectN
   cout << endl;
 };
 
-void Graph::biDirSearch(int s, int t){
+int Graph::biDirSearch(int s, int t) 
+{ 
+    // boolean array for BFS started from 
+    // source and target(front and backward BFS) 
+    // for keeping track on visited nodes 
+    bool s_visited[V], t_visited[V]; 
+  
+    // Keep track on parents of nodes 
+    // for front and backward search 
+    int s_parent[V], t_parent[V]; 
+  
+    // queue for front and backward search 
+    list<int> s_queue, t_queue; 
+  
+    int intersectNode = -1; 
+  
+    // necessary initialization 
+    for(int i=0; i<V; i++) 
+    { 
+        s_visited[i] = false; 
+        t_visited[i] = false; 
+    } 
+  
+    s_queue.push_back(s); 
+    s_visited[s] = true; 
+  
+    // parent of source is set to -1 
+    s_parent[s]=-1; 
+  
+    t_queue.push_back(t); 
+    t_visited[t] = true; 
+  
+    // parent of target is set to -1 
+    t_parent[t] = -1; 
+  
+    while (!s_queue.empty() && !t_queue.empty()) 
+    { 
+        // Do BFS from source and target vertices 
+        BFS(&s_queue, s_visited, s_parent); 
+        BFS(&t_queue, t_visited, t_parent); 
+  
+        // check for intersecting vertex 
+        intersectNode = isIntersecting(s_visited, t_visited); 
+  
+        // If intersecting vertex is found 
+        // that means there exist a path 
+        if(intersectNode != -1) 
+        { 
+            cout << "Path exist between " << s << " and "
+                 << t << "\n"; 
+            cout << "Intersection at: " << intersectNode << "\n"; 
+  
+            // print the path and exit the program 
+            printPath(s_parent, t_parent, s, t, intersectNode); 
+            exit(0); 
+        } 
+    } 
+    return -1; 
+} 
